@@ -1,7 +1,8 @@
 var HttpServer  = require('./lib/HttpServer.js').HttpServer,
     WebSocket   = require('ws'),
     WsServer    = WebSocket.Server,
-    MiroComms   = require('./lib/MiroComms.js').MiroComms;
+    MiroComms   = require('./lib/MiroComms.js').MiroComms,
+    Salesforce  = require('./lib/Salesforce.js').Salesforce;
 
 try{
   var MeArmPi   = require('./lib/MeArmPi.js').MeArmPi,
@@ -19,6 +20,7 @@ try{
 }
 
 var comms = new MiroComms(arm);
+var salesforce = new Salesforce();
 
 if(process.argv.indexOf('--no-ui') < 0){
   // Set up the http server for serving out our static UI

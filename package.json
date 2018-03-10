@@ -8,6 +8,8 @@
     "url": "https://github.com/bjpirt/mearm-js"
   },
   "dependencies": {
+    "nforce": "^1.10.0",
+    "pi-camera": "^1.0.1",
     "wireless-tools": "git+https://git@github.com/headlessPi/wireless-tools.git",
     "ws": "1.1.0"
   },
